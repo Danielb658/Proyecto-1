@@ -1,0 +1,90 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box ;
+   font-family: 'poppins';
+
+}/* ver cada uno de estos componente en internet*/
+body{
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,  #D3E9F9, #fff ) ;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; 
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    text-align: end;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-accion {
+    background:#122F5F ;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+
+.banner{
+    display: flex;
+    align-items: center; /*aliena al centro*/
+
+}
+
+.banner-info, .banner-imagen{
+    flex-basis: 50%;
+
+}
+
+.banner-info h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #122F5F;
+}
+
+.banner-imagen img{
+    width: 100%;
+
+}
+
+.pill{
+    background:#D8EBFA ; /*Color dentro del cointariner*/
+    color:#3276E2; /*Color del texto*/
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 350px;
+}
+
+.pill img{
+    width: 25px;/* tamaño de la imagen*/
+}
+
+.btn {
+    margin-top: 50px;
+}
+.btn a{
+    text-decoration: none;
+}
