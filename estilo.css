@@ -1,8 +1,8 @@
 :root {
-    --tparrafo: 25px;
+    --tparrafo: 15px;
 }
 
-*{
+*{  /* se usa para eliminar todo los espacios por defecto */
    margin: 0;
    padding: 0;
    box-sizing: border-box ;
@@ -44,14 +44,19 @@ nav{
 nav ul li {
     /* margin: 10px 20px; */
     display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left:10px;
+    margin-right: 10px;
     
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
+}
+
+li a.active{
+    background:rgb(15, 183, 163) ;
+    transition: .10s;
 }
 
 .banner{
@@ -61,6 +66,13 @@ nav ul li a{
 
 .banner-info, .banner-imagen{
     flex-basis: 50%;
+}
+
+.call{
+    background-color: #122F5F;
+    color: #D3E9F9;
+    padding: 2px 2px;
+    border-radius: 10px;
 }
 
 .btn-accion {
@@ -158,6 +170,13 @@ nav ul li a{
         text-decoration: none;
         color: black;
     }
+
+    li a.active{
+        background:rgb(15, 183, 163) ;
+        transition: .10s;
+    }
+
+ 
     
     .banner{
         display: flex;
@@ -166,6 +185,13 @@ nav ul li a{
     
     .banner-info, .banner-imagen{
         flex-basis: 50%;
+    }
+
+    .call{
+        background-color: #122F5F;
+        color: #D3E9F9;
+        padding: 2px 2px;
+        border-radius: 10px;
     }
     
     .btn-accion {
@@ -220,18 +246,11 @@ nav ul li a{
 
 
 
-
-
-
-
-
-
-
   @media (min-width: 481px) and (max-width: 768px) {
     /* Estilos CSS para el rango de 769px a 1024px */
 
     :root {
-        --tparrafo: 12px;
+        --tparrafo:9px;
     
     }
 
@@ -272,6 +291,8 @@ nav ul li a{
         text-decoration: none;
         color: rgb(0, 0, 0);
     }
+
+    
     
     .banner{
         display: flex;
@@ -280,6 +301,13 @@ nav ul li a{
     
     .banner-info, .banner-imagen{
         flex-basis: 50%;
+    }
+
+    .call{
+        background-color: #122F5F;
+        color: #D3E9F9;
+        padding: 2px 2px;
+        border-radius: 10px;
     }
     
     .btn-accion {
@@ -294,7 +322,7 @@ nav ul li a{
     } */
     
     .pill{
-        font-size: var(--tparrafo);
+        font-size: 7px;
         background:#D8EBFA ; /*Color dentro del cointariner*/
         color:#3276E2; /*Color del texto*/
         padding: 10px 20px;
@@ -306,11 +334,11 @@ nav ul li a{
     }
     
     .pill img{
-        width: 25px;/* tamaño de la imagen*/
+        width: 15px;/* tamaño de la imagen*/
     }
     
     .banner-info h2{
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
         color: #122F5F;
     }
@@ -339,15 +367,14 @@ nav ul li a{
     /* Estilos CSS para el rango de 769px a 1024px */
 
     :root {
-        --tparrafo: 7px;
+        --tparrafo:8px;
     
     }
 
     .container{
         /* max-width: 1200px; */
         margin: 0 auto;
-    
-    
+
         width: 90%;
         
     }
@@ -363,7 +390,7 @@ nav ul li a{
     }
     
     nav{
-        text-align: end;
+        text-align:center;
         width: 100%;
         font-size: var(--tparrafo);
     }
@@ -371,16 +398,20 @@ nav ul li a{
     nav ul li  {
         /* margin: 10px 20px; */
         display: inline-block;
-        margin-left: 3px;
-        margin-right: 3px;
-
-        background-color: brown;
+        margin-left: 2px;
+        margin-right: 2px;
+        background-color: white;
         
     }
     
     nav ul li a{
         text-decoration: none;
-        color: rgb(15, 183, 163);
+        color: black;
+    }
+
+    li a.active{
+        background:rgb(15, 183, 163) ;
+        transition: .10s;
     }
     
     .banner{
@@ -392,6 +423,13 @@ nav ul li a{
         flex-basis: 50%;
     }
     
+    .call{
+       
+        color: #D3E9F9;
+        padding: 1px 1px;
+        border-radius: 10px;
+    }
+    
     .btn-accion {
         background:#122F5F ;
         color: white;
@@ -399,9 +437,7 @@ nav ul li a{
         border-radius: 15px;
     }
     
-    /* .banner-info span {
-        
-    } */
+    
     
     .pill{
         font-size: var(--tparrafo);
