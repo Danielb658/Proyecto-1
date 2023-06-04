@@ -205,7 +205,7 @@ nav ul li a{
     }
     
     .btn {
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .btn a{
         text-decoration: none;
@@ -231,7 +231,7 @@ nav ul li a{
     /* Estilos CSS para el rango de 769px a 1024px */
 
     :root {
-        --tparrafo: 10px;
+        --tparrafo: 12px;
     
     }
 
@@ -263,14 +263,14 @@ nav ul li a{
     nav ul li {
         /* margin: 10px 20px; */
         display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 3px;
+        margin-right: 3px;
         
     }
     
     nav ul li a{
         text-decoration: none;
-        color: rgb(238, 2, 2);
+        color: rgb(0, 0, 0);
     }
     
     .banner{
@@ -301,7 +301,8 @@ nav ul li a{
         border-radius: 20px;
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 75%;
+        text-align: center;
     }
     
     .pill img{
@@ -309,7 +310,7 @@ nav ul li a{
     }
     
     .banner-info h2{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         color: #122F5F;
     }
@@ -319,7 +320,115 @@ nav ul li a{
     }
     
     .btn {
-        margin-top: 50px;
+        margin-top: 25px;
+    }
+    .btn a{
+        text-decoration: none;
+        font-size: var(--tparrafo);
+    }
+    
+    .banner-imagen img{
+        width: 100%;
+    }
+
+  }
+
+
+
+  @media (max-width: 480px) {
+    /* Estilos CSS para el rango de 769px a 1024px */
+
+    :root {
+        --tparrafo: 12px;
+    
+    }
+
+    .container{
+        /* max-width: 1200px; */
+        margin: 0 auto;
+    
+    
+        width: 90%;
+        
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+    }
+    
+    header img {
+        width: 30%;
+        height: auto;
+    }
+    
+    nav{
+        text-align: end;
+        width: 100%;
+        font-size: var(--tparrafo);
+    }
+    
+    nav ul li {
+        /* margin: 10px 20px; */
+        display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+        
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(15, 183, 163);
+    }
+    
+    .banner{
+        display: flex;
+        align-items: center; /*aliena al centro*/
+    }
+    
+    .banner-info, .banner-imagen{
+        flex-basis: 50%;
+    }
+    
+    .btn-accion {
+        background:#122F5F ;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 25px;
+    }
+    
+    /* .banner-info span {
+        
+    } */
+    
+    .pill{
+        font-size: var(--tparrafo);
+        background:#D8EBFA ; /*Color dentro del cointariner*/
+        color:#3276E2; /*Color del texto*/
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        width: 75%;
+        text-align: center;
+    }
+    
+    .pill img{
+        width: 25px;/* tamaño de la imagen*/
+    }
+    
+    .banner-info h2{
+        font-size: 30px;
+        font-weight: 700;
+        color: #122F5F;
+    }
+    
+    .banner-info p{
+        font-size: var(--tparrafo);
+    }
+    
+    .btn {
+        margin-top: 25px;
     }
     .btn a{
         text-decoration: none;
