@@ -1,3 +1,7 @@
+:root {
+    --tparrafo: 25px;
+}
+
 *{
    margin: 0;
    padding: 0;
@@ -13,8 +17,11 @@ body{
 }
 
 .container{
-    max-width: 1200px;
-    margin: 0 auto; 
+    /* max-width: 1200px; */
+    margin: 0 auto;
+
+
+    width: 80%;
     
 }
 
@@ -23,19 +30,37 @@ header{
     align-items: center;
 }
 
+header img {
+    width: 30%;
+    height: auto;
+}
+
 nav{
     text-align: end;
     width: 100%;
+    font-size: var(--tparrafo);
 }
 
 nav ul li {
+    /* margin: 10px 20px; */
     display: inline-block;
-    margin: 10px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
+}
+
+.banner{
+    display: flex;
+    align-items: center; /*aliena al centro*/
+}
+
+.banner-info, .banner-imagen{
+    flex-basis: 50%;
 }
 
 .btn-accion {
@@ -45,16 +70,23 @@ nav ul li a{
     border-radius: 25px;
 }
 
+/* .banner-info span {
+    
+} */
 
-.banner{
+.pill{
+    font-size: var(--tparrafo);
+    background:#D8EBFA ; /*Color dentro del cointariner*/
+    color:#3276E2; /*Color del texto*/
+    padding: 10px 20px;
+    border-radius: 20px;
     display: flex;
-    align-items: center; /*aliena al centro*/
-
+    align-items: center;
+    width: 55%;
 }
 
-.banner-info, .banner-imagen{
-    flex-basis: 50%;
-
+.pill img{
+    width: 25px;/* tamaño de la imagen*/
 }
 
 .banner-info h2{
@@ -63,23 +95,8 @@ nav ul li a{
     color: #122F5F;
 }
 
-.banner-imagen img{
-    width: 100%;
-
-}
-
-.pill{
-    background:#D8EBFA ; /*Color dentro del cointariner*/
-    color:#3276E2; /*Color del texto*/
-    padding: 10px 20px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    width: 350px;
-}
-
-.pill img{
-    width: 25px;/* tamaño de la imagen*/
+.banner-info p{
+    font-size: var(--tparrafo);
 }
 
 .btn {
@@ -87,11 +104,230 @@ nav ul li a{
 }
 .btn a{
     text-decoration: none;
+    font-size: var(--tparrafo);
 }
 
-@media (max-width: 800px){
+.banner-imagen img{
+    width: 100%;
+}
 
-    .body{
-        flex-direction: column;
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos CSS para el rango de 769px a 1024px */
+
+    :root {
+        --tparrafo: 15px;
+    
     }
-}
+
+    .container{
+        /* max-width: 1200px; */
+        margin: 0 auto;
+    
+    
+        width: 90%;
+        
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+    }
+    
+    header img {
+        width: 30%;
+        height: auto;
+    }
+    
+    nav{
+        text-align: end;
+        width: 100%;
+        font-size: var(--tparrafo);
+    }
+    
+    nav ul li {
+        /* margin: 10px 20px; */
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .banner{
+        display: flex;
+        align-items: center; /*aliena al centro*/
+    }
+    
+    .banner-info, .banner-imagen{
+        flex-basis: 50%;
+    }
+    
+    .btn-accion {
+        background:#122F5F ;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 25px;
+    }
+    
+    /* .banner-info span {
+        
+    } */
+    
+    .pill{
+        font-size: var(--tparrafo);
+        background:#D8EBFA ; /*Color dentro del cointariner*/
+        color:#3276E2; /*Color del texto*/
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .pill img{
+        width: 25px;/* tamaño de la imagen*/
+    }
+    
+    .banner-info h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: #122F5F;
+    }
+    
+    .banner-info p{
+        font-size: var(--tparrafo);
+    }
+    
+    .btn {
+        margin-top: 50px;
+    }
+    .btn a{
+        text-decoration: none;
+        font-size: var(--tparrafo);
+    }
+    
+    .banner-imagen img{
+        width: 100%;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos CSS para el rango de 769px a 1024px */
+
+    :root {
+        --tparrafo: 10px;
+    
+    }
+
+    .container{
+        /* max-width: 1200px; */
+        margin: 0 auto;
+    
+    
+        width: 90%;
+        
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+    }
+    
+    header img {
+        width: 30%;
+        height: auto;
+    }
+    
+    nav{
+        text-align: end;
+        width: 100%;
+        font-size: var(--tparrafo);
+    }
+    
+    nav ul li {
+        /* margin: 10px 20px; */
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .banner{
+        display: flex;
+        align-items: center; /*aliena al centro*/
+    }
+    
+    .banner-info, .banner-imagen{
+        flex-basis: 50%;
+    }
+    
+    .btn-accion {
+        background:#122F5F ;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 25px;
+    }
+    
+    /* .banner-info span {
+        
+    } */
+    
+    .pill{
+        font-size: var(--tparrafo);
+        background:#D8EBFA ; /*Color dentro del cointariner*/
+        color:#3276E2; /*Color del texto*/
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .pill img{
+        width: 25px;/* tamaño de la imagen*/
+    }
+    
+    .banner-info h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: #122F5F;
+    }
+    
+    .banner-info p{
+        font-size: var(--tparrafo);
+    }
+    
+    .btn {
+        margin-top: 50px;
+    }
+    .btn a{
+        text-decoration: none;
+        font-size: var(--tparrafo);
+    }
+    
+    .banner-imagen img{
+        width: 100%;
+    }
+
+  }
