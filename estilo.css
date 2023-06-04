@@ -339,7 +339,7 @@ nav ul li a{
     /* Estilos CSS para el rango de 769px a 1024px */
 
     :root {
-        --tparrafo: 12px;
+        --tparrafo: 7px;
     
     }
 
@@ -368,7 +368,7 @@ nav ul li a{
         font-size: var(--tparrafo);
     }
     
-    nav ul li {
+    nav ul li  {
         /* margin: 10px 20px; */
         display: inline-block;
         margin-left: 3px;
@@ -395,8 +395,8 @@ nav ul li a{
     .btn-accion {
         background:#122F5F ;
         color: white;
-        padding: 10px 30px;
-        border-radius: 25px;
+        padding: 5px 5px;
+        border-radius: 15px;
     }
     
     /* .banner-info span {
@@ -407,7 +407,7 @@ nav ul li a{
         font-size: var(--tparrafo);
         background:#D8EBFA ; /*Color dentro del cointariner*/
         color:#3276E2; /*Color del texto*/
-        padding: 10px 20px;
+        padding: 10px 10px;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -416,11 +416,11 @@ nav ul li a{
     }
     
     .pill img{
-        width: 25px;/* tamaño de la imagen*/
+        width: 10px;/* tamaño de la imagen*/
     }
     
     .banner-info h2{
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
         color: #122F5F;
     }
